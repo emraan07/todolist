@@ -10,7 +10,8 @@ body {
   min-height: 1000px;
   font-family: "helvetica neue";
 }
-h3 {
+h3,
+a {
   color: #a683e3;
   font-family: "helvetica neue";
 }

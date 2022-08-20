@@ -17,13 +17,13 @@
 
     <!-- As a heading -->
     <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid justify-content-center">
-            <h3>To Do List App</h3>
+        <div class="container-fluid ">
+            <h3 class="m-auto">To Do List App</h3>
         </div>
     </nav>
     <div class="box" id="heading">
         <h1>
-            <%= dayOfTheWeek %>
+            <%= listTitle %>
         </h1>
     </div>
     <div class="box">
@@ -39,7 +39,7 @@
     
         <form class="item" action="/" method="post">
             <input type="text" name="item" class="form-control" id="item" placeholder="New item" autocomplete="off" required>
-            <button type="submit" name="button">+</button>
+            <button type="submit" name="list" value=<%= listTitle %> >+</button>
             
         </form>
         
