@@ -27,6 +27,15 @@ app.get("/", function(req, res) {
 app.get("/work", function(req, res) {
     res.render("list", {listTitle : "Work List", newItem : workList})
 })
+
+// about route
+app.get("/about", function(req, res) {
+    res.render("about")
+})
+// contact route
+app.get("/contact", function(req, res) {
+    res.render("contact")
+})
 // form
 app.post("/", function(req, res) {
     var item = req.body.item;
@@ -39,6 +48,6 @@ app.post("/", function(req, res) {
     }
     
 })
-app.listen(3000, function() {
+app.listen(process.env.port || 3000, function() {
     console.log("Server running on port 3000");
 })
